@@ -1,0 +1,157 @@
+.results-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.results-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.download-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #333;
+}
+
+.results-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.result-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.result-title {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.result-details {
+  padding: 15px;
+}
+
+.result-details p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.result-details strong {
+  font-weight: 600;
+  color: #555;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Author and affiliation sections */
+.author-section, .affiliation-section, .email-section {
+  margin: 12px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.author-section p, .affiliation-section p, .email-section p {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.author-section ul, .affiliation-section ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.author-section li, .affiliation-section li {
+  padding: 3px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.none-available {
+  color: #777;
+  font-style: italic;
+  padding-left: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* PubMed link button */
+.result-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pubmed-link-button {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+}
+
+.pubmed-link-button:hover {
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .results-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .results-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .download-button {
+    margin-top: 10px;
+  }
+} 

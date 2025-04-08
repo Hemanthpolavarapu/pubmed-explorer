@@ -1,0 +1,8 @@
+{
+  "short_name": "PubMed Explorer",
+  "name": "PubMed Explorer - Research Paper Search",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+} 
